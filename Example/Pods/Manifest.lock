@@ -1,0 +1,16 @@
+PODS:
+  - YungHTMLParser (0.1.0)
+
+DEPENDENCIES:
+  - YungHTMLParser (from `../`)
+
+EXTERNAL SOURCES:
+  YungHTMLParser:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YungHTMLParser: 7cde46a096725ddaab54df33bfa0ff9c1ed539fd
+
+PODFILE CHECKSUM: 37d09218f85a46948f2da689c78b5ce1a2591655
+
+COCOAPODS: 1.15.2

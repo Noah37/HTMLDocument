@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'YungHTMLParser_Example' do
+  pod 'YungHTMLParser', :path => '../'
+
+  target 'YungHTMLParser_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

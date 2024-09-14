@@ -1,0 +1,6 @@
+framework module YungHTMLParser {
+  umbrella header "YungHTMLParser-umbrella.h"
+
+  export *
+  module * { export * }
+}
