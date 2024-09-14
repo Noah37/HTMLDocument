@@ -57,14 +57,14 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6D9050ABE17AABE5A9F5DC68 /* Pods-YungHTMLParser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YungHTMLParser_Example.release.xcconfig"; path = "Target Support Files/Pods-YungHTMLParser_Example/Pods-YungHTMLParser_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6E80D11183D91437E31BBFDB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6E80D11183D91437E31BBFDB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7858D7181BB0B6D3E8F62071 /* Pods-YungHTMLParser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YungHTMLParser_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YungHTMLParser_Tests/Pods-YungHTMLParser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A857EDB95330E45DE5200B8 /* Pods_YungHTMLParser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YungHTMLParser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A008C6082501734C6643598A /* YungHTMLParser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YungHTMLParser.podspec; path = ../YungHTMLParser.podspec; sourceTree = "<group>"; };
+		A008C6082501734C6643598A /* YungHTMLParser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YungHTMLParser.podspec; path = ../YungHTMLParser.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A08B37831D3032B6B469DB51 /* Pods-YungHTMLParser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YungHTMLParser_Example.debug.xcconfig"; path = "Target Support Files/Pods-YungHTMLParser_Example/Pods-YungHTMLParser_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C342ED9D712AD709C71816D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C342ED9D712AD709C71816D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E296893D8E493F8D37BC9B06 /* Pods-YungHTMLParser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YungHTMLParser_Tests.release.xcconfig"; path = "Target Support Files/Pods-YungHTMLParser_Tests/Pods-YungHTMLParser_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FAEA243908603EC53AD6B69C /* Pods_YungHTMLParser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YungHTMLParser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -103,7 +103,6 @@
 				7858D7181BB0B6D3E8F62071 /* Pods-YungHTMLParser_Tests.debug.xcconfig */,
 				E296893D8E493F8D37BC9B06 /* Pods-YungHTMLParser_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

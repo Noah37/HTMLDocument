@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		05235DC90C569AA7250ED12950A7BF5D /* HTMLNode+XPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C7246BB9DB1683CB02C98389B051569 /* HTMLNode+XPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1015FADBFC6D356AB40BD2E97A869FEE /* HTMLparser.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A023B0DB44EC8855EA9A6411AAD2257 /* HTMLparser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B1BFCE384DC01843FBAAD57748C4A48 /* Pods-YungHTMLParser_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB81FEF15F2CEB003063CA22679E784 /* Pods-YungHTMLParser_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25C66523C8EB150EB5125287545DB004 /* HTMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2F13F639B44F7C82B2AEA59C9BF447 /* HTMLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26110F2F94358DE21BEC73F139D66489 /* HTMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 500CE33BAD7393FE9F145309BFACF758 /* HTMLNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -20,7 +19,6 @@
 		ABEEAA56694DE138F034A487FF620CA3 /* YungHTMLParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F05153EDA3983EBEFA734FBD2584E717 /* YungHTMLParser-dummy.m */; };
 		BEB30F28F403EC25DFE890A176842F5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		D2D29D7B3BD9EE1F775CD1B2DD98EE86 /* HTMLNode+XPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 715A89C61C4C257D46F19F16A8F200A3 /* HTMLNode+XPath.m */; };
-		D7BACCA242FFA5AB2DC4659F60F06058 /* HTMLparser.c in Sources */ = {isa = PBXBuildFile; fileRef = 8294E86BA0CBAEB46DDF3E429A97882D /* HTMLparser.c */; };
 		D8653467269A0AE9D6CC0D94C951E5A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		DB92ABD75F46085182FE665B7C77AAC3 /* Pods-YungHTMLParser_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF994A81ED44E60C8AB0CC615C4A784 /* Pods-YungHTMLParser_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE52DD4DE5BAD7CF85FB7DF6F29DAA0B /* Pods-YungHTMLParser_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C30D8234D40E6C64AB1F68E410A331 /* Pods-YungHTMLParser_Tests-dummy.m */; };
@@ -53,26 +51,24 @@
 		37EF83DC707F3A053283E4436111AAD9 /* Pods-YungHTMLParser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YungHTMLParser_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3868CF38A4C7CDCA32D551A7BA8B4D3E /* Pods-YungHTMLParser_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-YungHTMLParser_Tests"; path = Pods_YungHTMLParser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7246BB9DB1683CB02C98389B051569 /* HTMLNode+XPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "HTMLNode+XPath.h"; path = "YungHTMLParser/Classes/HTMLNode+XPath.h"; sourceTree = "<group>"; };
-		4A023B0DB44EC8855EA9A6411AAD2257 /* HTMLparser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLparser.h; path = YungHTMLParser/Classes/HTMLparser.h; sourceTree = "<group>"; };
 		4BF994A81ED44E60C8AB0CC615C4A784 /* Pods-YungHTMLParser_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YungHTMLParser_Example-umbrella.h"; sourceTree = "<group>"; };
 		500CE33BAD7393FE9F145309BFACF758 /* HTMLNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLNode.h; path = YungHTMLParser/Classes/HTMLNode.h; sourceTree = "<group>"; };
 		5BF5AE6B8189424F1732075F5034BDF2 /* HTMLNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLNode.m; path = YungHTMLParser/Classes/HTMLNode.m; sourceTree = "<group>"; };
 		5FD1686BDBABAE9E3E37552107423901 /* Pods-YungHTMLParser_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YungHTMLParser_Example-dummy.m"; sourceTree = "<group>"; };
 		5FD6C8ED421E8C315ABB084015D598A7 /* Pods-YungHTMLParser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YungHTMLParser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		65C263ADB6DA0096921E46650DE81921 /* Pods-YungHTMLParser_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YungHTMLParser_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		69FA9A80B29059771AE2BDBB725A318E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		69FA9A80B29059771AE2BDBB725A318E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6F62EB65C96B08131197B156B15BF8B9 /* Pods-YungHTMLParser_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YungHTMLParser_Tests-Info.plist"; sourceTree = "<group>"; };
 		715A89C61C4C257D46F19F16A8F200A3 /* HTMLNode+XPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "HTMLNode+XPath.m"; path = "YungHTMLParser/Classes/HTMLNode+XPath.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7F3C8E03B1508C975C52709F86CD9AD0 /* Pods-YungHTMLParser_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YungHTMLParser_Tests.modulemap"; sourceTree = "<group>"; };
 		80257E705B52C334885E0DFF26945A89 /* YungHTMLParser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YungHTMLParser.release.xcconfig; sourceTree = "<group>"; };
 		825B08871A973A437B6FF4BF22BC8B17 /* Pods-YungHTMLParser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YungHTMLParser_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8294E86BA0CBAEB46DDF3E429A97882D /* HTMLparser.c */ = {isa = PBXFileReference; includeInIndex = 1; name = HTMLparser.c; path = YungHTMLParser/Classes/HTMLparser.c; sourceTree = "<group>"; };
-		86F64B32B12CA2AB3E02598CB25AD647 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		86F64B32B12CA2AB3E02598CB25AD647 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		89C2514E8BE4F105D85131952EBD0AB3 /* Pods-YungHTMLParser_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YungHTMLParser_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		963C5759534F23A3B1420E468E64C57D /* YungHTMLParser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YungHTMLParser.modulemap; sourceTree = "<group>"; };
 		9A2F13F639B44F7C82B2AEA59C9BF447 /* HTMLDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLDocument.h; path = YungHTMLParser/Classes/HTMLDocument.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A103741D42FF98FE1B1F3E40B8641DF8 /* Pods-YungHTMLParser_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YungHTMLParser_Example-frameworks.sh"; sourceTree = "<group>"; };
 		AE007F0E349E89A3BD2625A92546E5C7 /* HTMLDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTMLDocument.m; path = YungHTMLParser/Classes/HTMLDocument.m; sourceTree = "<group>"; };
 		BDAC1D3CA199768C18478771F10A3FE8 /* Pods-YungHTMLParser_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YungHTMLParser_Example-Info.plist"; sourceTree = "<group>"; };
@@ -80,7 +76,7 @@
 		D0635CB3C6E404189BE926AA919023CB /* Pods-YungHTMLParser_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YungHTMLParser_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		D70E37B6B747D42263AD2C0394852C88 /* YungHTMLParser-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YungHTMLParser-Info.plist"; sourceTree = "<group>"; };
 		E541DCB33591A804B11812940808528C /* YungHTMLParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YungHTMLParser-prefix.pch"; sourceTree = "<group>"; };
-		E9DC2598612C0CE066A1F30B83711345 /* YungHTMLParser.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = YungHTMLParser.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E9DC2598612C0CE066A1F30B83711345 /* YungHTMLParser.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = YungHTMLParser.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F05153EDA3983EBEFA734FBD2584E717 /* YungHTMLParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YungHTMLParser-dummy.m"; sourceTree = "<group>"; };
 		FAB81FEF15F2CEB003063CA22679E784 /* Pods-YungHTMLParser_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YungHTMLParser_Tests-umbrella.h"; sourceTree = "<group>"; };
 		FCAB6009E1A21E7D08B475E8449F8881 /* YungHTMLParser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YungHTMLParser.debug.xcconfig; sourceTree = "<group>"; };
@@ -196,8 +192,6 @@
 				5BF5AE6B8189424F1732075F5034BDF2 /* HTMLNode.m */,
 				3C7246BB9DB1683CB02C98389B051569 /* HTMLNode+XPath.h */,
 				715A89C61C4C257D46F19F16A8F200A3 /* HTMLNode+XPath.m */,
-				8294E86BA0CBAEB46DDF3E429A97882D /* HTMLparser.c */,
-				4A023B0DB44EC8855EA9A6411AAD2257 /* HTMLparser.h */,
 				D1463144856FFBCFE8C738382CC74A0E /* Pod */,
 				4A6CE4F5B8EF5CF55176ED03D204844F /* Support Files */,
 			);
@@ -254,7 +248,6 @@
 				25C66523C8EB150EB5125287545DB004 /* HTMLDocument.h in Headers */,
 				26110F2F94358DE21BEC73F139D66489 /* HTMLNode.h in Headers */,
 				05235DC90C569AA7250ED12950A7BF5D /* HTMLNode+XPath.h in Headers */,
-				1015FADBFC6D356AB40BD2E97A869FEE /* HTMLparser.h in Headers */,
 				4ECDD82F573DB3415DD451EDB62FE550 /* YungHTMLParser-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,7 +345,6 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			minimizedProjectReferenceProxies = 0;
 			productRefGroup = D6D883C0A17B8613C8E332D41769DC39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -396,7 +388,6 @@
 				4BABAB42DF9F7C0B59F2BC9C3077B420 /* HTMLDocument.m in Sources */,
 				8A2072B00B266DE96BB2F2EAC3B1F111 /* HTMLNode.m in Sources */,
 				D2D29D7B3BD9EE1F775CD1B2DD98EE86 /* HTMLNode+XPath.m in Sources */,
-				D7BACCA242FFA5AB2DC4659F60F06058 /* HTMLparser.c in Sources */,
 				ABEEAA56694DE138F034A487FF620CA3 /* YungHTMLParser-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,8 +547,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
