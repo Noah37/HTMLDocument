@@ -358,6 +358,11 @@ void childrenOfTag(const xmlChar * tagName, xmlNode * node, NSMutableArray * arr
         if (string) {
             return [NSString stringWithUTF8String:(const char *)string];
         }
+    } else if (xmlNode_ && xmlNode_->type == XML_TEXT_NODE) {
+        xmlChar *string = xmlNode_->content;
+        if (string) {
+            return [NSString stringWithUTF8String:(const char *)string];
+        }
     }
     
     return nil;
