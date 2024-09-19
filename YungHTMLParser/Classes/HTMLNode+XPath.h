@@ -50,6 +50,12 @@
 
 // Xpath query methods
 
+/*! Returns the first descendant node for a XPath query
+ * \param query The XPath query string
+ * \param error An error object that, on return, identifies any Xpath errors.
+ * \returns The first found descendant node string value or nil if no node matches the parameters
+ */
+- (NSString *)stringValueForXPath:(NSString *)query error:(NSError **)error;
 
 /*! Returns the first descendant node for a XPath query
  * \param query The XPath query string

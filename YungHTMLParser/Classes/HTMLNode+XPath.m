@@ -43,6 +43,10 @@ static NSString *kXPathPredicateAttributeIsEqual = @"//*[@%@ ='%@']";
 static NSString *kXPathPredicateAttributeBeginsWith = @"//*[starts-with(@%@,'%@')]";
 static NSString *kXPathPredicateAttributeEndsWith = @"//*['%@' = substring(@%@, string-length(@%@)- string-length('%@') +1)]";
 static NSString *kXPathPredicateAttributeContains = @"//*[contains(@%@,'%@')]";
+static NSString *kXPathPredicateAttributeHref = @"@href";
+static NSString *kXPathPredicateAttributeDataHydroClick = @"@data-hydro-click";
+static NSString *kXPathPredicateAttributeDataHydroClickHMac = @"@data-hydro-click-hmac";
+static NSString *kXPathPredicateAttributeDataHovercardUrl = @"@data-hovercard-url";
 
 static id performXPathQuery(xmlNode * node, NSString * query, BOOL returnSingleNode, BOOL considerError, HTMLNode *htmlNode);
 static void XPathErrorCallback(void *node, xmlErrorPtr err);
@@ -134,9 +138,24 @@ static id performXPathQuery(xmlNode * node, NSString * query, BOOL returnSingleN
 
 // perform XPath query and return first search result
 
+- (NSString *)stringValueForXPath:(NSString *)query error:(NSError **)error {
+    self.xpathError = nil;
+    // attribute for query
+    if ([query hasPrefix:@"@"]) {
+        return [self attributeForName:query];
+    }
+    HTMLNode *result = (HTMLNode *)performXPathQuery(xmlNode_, query, YES, error != nil, self);
+    if (error) *error = xpathError;
+    return [result stringValue];
+}
+
 - (HTMLNode *)nodeForXPath:(NSString *)query error:(NSError **)error
 {
     self.xpathError = nil;
+    // attribute for query
+    if ([query hasPrefix:@"@"]) {
+        return [self attributeForName:query];
+    }
     HTMLNode *result = (HTMLNode *)performXPathQuery(xmlNode_, query, YES, error != nil, self);
     if (error) *error = xpathError;
     return result;
