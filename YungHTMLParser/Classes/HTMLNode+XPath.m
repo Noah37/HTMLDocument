@@ -150,7 +150,7 @@ static id performXPathQuery(xmlNode * node, NSString * query, BOOL returnSingleN
 }
 
 - (NSString *)NoNilStringValueForXPath:(NSString *)query {
-    return [self stringValueForXPath:query error:nil];
+    return [self NoNilStringValueForXPath:query error:nil];
 }
 
 - (HTMLNode *)nodeForXPath:(NSString *)query error:(NSError **)error
