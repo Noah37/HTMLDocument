@@ -138,7 +138,7 @@ static id performXPathQuery(xmlNode * node, NSString * query, BOOL returnSingleN
 
 // perform XPath query and return first search result
 
-- (NSString *)stringValueForXPath:(NSString *)query error:(NSError **)error {
+- (NSString *)NoNilStringValueForXPath:(NSString *)query error:(NSError **)error {
     self.xpathError = nil;
     // attribute for query
     if ([query hasPrefix:@"@"]) {
@@ -149,7 +149,7 @@ static id performXPathQuery(xmlNode * node, NSString * query, BOOL returnSingleN
     return [result NoNilStringValueWithCharacter:@"/"];
 }
 
-- (NSString *)stringValueForXPath:(NSString *)query {
+- (NSString *)NoNilStringValueForXPath:(NSString *)query {
     return [self stringValueForXPath:query error:nil];
 }
 
