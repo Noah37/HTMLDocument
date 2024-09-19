@@ -228,6 +228,9 @@
  */
 @property (SAFE_ARC_READONLY_OBJ_PROP) NSString *stringValue;
 
+- (NSString *)NoNilStringValueWithCharacter:(NSString *)character;
+- (NSString *)NoNilTextContentWithCharacter:(NSString *)character;
+
 /*! The string value of a node trimmed by whitespace and newline characters and collapsing all multiple occurrences of whitespace and newline characters within the string into a single space
  * \returns The trimmed and collapsed string value or nil
  */

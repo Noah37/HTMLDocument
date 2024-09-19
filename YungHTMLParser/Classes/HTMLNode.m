@@ -373,6 +373,16 @@ void childrenOfTag(const xmlChar * tagName, xmlNode * node, NSMutableArray * arr
     return [self.rawStringValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
+- (NSString *)NoNilStringValueWithCharacter:(NSString *)character
+{
+    return [self.rawStringValue stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:character]];
+}
+
+- (NSString *)NoNilTextContentWithCharacter:(NSString *)character
+{
+    return [self.textContent stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:character]];
+}
+
 - (NSString *)stringValueCollapsingWhitespace;
 {
     return [self.stringValue collapseWhitespaceAndNewLine];

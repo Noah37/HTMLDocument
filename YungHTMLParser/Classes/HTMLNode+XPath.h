@@ -56,6 +56,7 @@
  * \returns The first found descendant node string value or nil if no node matches the parameters
  */
 - (NSString *)stringValueForXPath:(NSString *)query error:(NSError **)error;
+- (NSString *)stringValueForXPath:(NSString *)query;
 
 /*! Returns the first descendant node for a XPath query
  * \param query The XPath query string

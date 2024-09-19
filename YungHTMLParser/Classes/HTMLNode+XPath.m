@@ -142,20 +142,20 @@ static id performXPathQuery(xmlNode * node, NSString * query, BOOL returnSingleN
     self.xpathError = nil;
     // attribute for query
     if ([query hasPrefix:@"@"]) {
-        return [self attributeForName:query];
+        return [self attributeForName:[query stringByReplacingOccurrencesOfString:@"@" withString:@""]];
     }
     HTMLNode *result = (HTMLNode *)performXPathQuery(xmlNode_, query, YES, error != nil, self);
     if (error) *error = xpathError;
-    return [result stringValue];
+    return [result NoNilStringValueWithCharacter:@"/"];
+}
+
+- (NSString *)stringValueForXPath:(NSString *)query {
+    return [self stringValueForXPath:query error:nil];
 }
 
 - (HTMLNode *)nodeForXPath:(NSString *)query error:(NSError **)error
 {
     self.xpathError = nil;
-    // attribute for query
-    if ([query hasPrefix:@"@"]) {
-        return [self attributeForName:query];
-    }
     HTMLNode *result = (HTMLNode *)performXPathQuery(xmlNode_, query, YES, error != nil, self);
     if (error) *error = xpathError;
     return result;
